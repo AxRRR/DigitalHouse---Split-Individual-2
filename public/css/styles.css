@@ -4,8 +4,17 @@ html, body {
 }
 
 h1{
-    color: #fcf45c;
-    background-color: black;
+    color: grey;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: hotpink; */
+}
+
+p{
+    color: grey;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: rgb(30, 255, 0); */
 }
 
 nav {
@@ -91,3 +100,66 @@ div input {
 ul {
     list-style: none;
 }
+
+
+
+
+
+/* Products */
+
+.products__title {
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter;
+}
+
+.products {
+    width: 60%;
+    /* height: 700px; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: lawngreen; */
+    
+}
+
+.product__section{
+    width: 240px;
+    margin-left: 35px;
+    /* background-color: lightcoral; */
+    height: 370px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.product__section figure {
+    background-color: #fcf45c;
+    width: 100%;
+    margin: 0px;
+}
+.product__section img {
+    width: 100%;
+}
+
+.product__header {
+    background-color: indigo;
+}
+
+.product__discount {
+    color: rgb(4, 160, 4);
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+section article {
+    /* background-color: khaki; */
+    padding: 10px;
+    align-items: center;
+}
+/* .product__section figure {
+    background-color: hotpink;
+    float: left;
+} */
