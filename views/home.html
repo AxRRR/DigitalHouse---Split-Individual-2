@@ -7,6 +7,7 @@
         <style type="text/css" media="screen">
             @import '/css/styles.css';
           </style>
+        
         <title>Mercado Liebre</title>
     </head>
 
@@ -22,22 +23,24 @@
                             class="home--ImageStyle"
                         />
                     </div>
-                    <div class='navigation--search'>
+                    <button id='mobileButton' class='navigation--button'>▼</button>
+                    <div id='menuInput' class='navigation--search'>
                         <input 
                             type='text'
                             placeholder='Busca un producto' 
                         />
                     </div>
-                    <div class='navigation--user'>
+                    <div id='menuUser1' class='navigation--user'>
                         <ul>
                             <li>Crea una cuenta</li>
                             <li>Ingresa</li>
                             <li>Mis compras</li>
                         </ul>
                     </div>
+                    
                 </section>
-                <section class='navigation--categories'>
-                    <p>Compra a cuotas y sin tarjeta de crédito</p>
+                <section id='menuUser2' class='navigation--categories'>
+                    <!-- <p>Compra a cuotas y sin tarjeta de crédito</p> -->
                     <ul>
                         <li>Ofertas</li>
                         <li>Tiendas oficiales</li>
@@ -235,6 +238,7 @@
         </main>
 
 
+        <script src='/scripts/button.js'></script>
     </body>
 
     <!-- Footer -->
