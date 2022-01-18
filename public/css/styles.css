@@ -1,24 +1,31 @@
+/* Estilos globales */
+
 html, body {
-    background-color: white;
+    background-color: whitesmoke;
     margin: 0px;
+}
+
+main{
+    margin-top: 200px;
 }
 
 h1{
     color: grey;
     margin: 0px;
     padding: 0px;
-    /* background-color: hotpink; */
 }
 
 p{
     color: grey;
     margin: 0px;
     padding: 0px;
-    /* background-color: rgb(30, 255, 0); */
 }
 
 nav {
     background-color: #fcf45c;
+    position: fixed;
+    width: 100%;
+    top: 0px;
 }
 
 nav input {
@@ -32,10 +39,12 @@ nav img {
     width: 100%;
 }
 
+/* Estilos de Navegación */
 .navigation--main{
     width: 100%;
     height: 80px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -43,7 +52,6 @@ nav img {
     margin-top: 20px;
     height: 60px;
     width: 10%;
-    justify-content: right;
 }
 
 .navigation--search {
@@ -62,6 +70,7 @@ nav img {
 .navigation--categories{
     display: flex;
     width: 60%;
+    height: 50px;
     margin: auto;
 }
 
@@ -74,12 +83,17 @@ nav img {
     cursor: pointer;
 }
 
+
+
+
+
+
+
 div ul{
     display: flex;
     height: 35px;
     background-color: transparent;
     width: 100%;
-    justify-content: right;
 }
 
 div ul li{
@@ -105,8 +119,7 @@ ul {
 
 
 
-/* Products */
-
+/* Estilos de Productos */
 .products__title {
     width: 60%;
     margin-top: 30px;
@@ -118,21 +131,19 @@ ul {
 
 .products {
     width: 60%;
-    /* height: 700px; */
     display: flex;
+    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: lawngreen; */
-    
 }
 
 .product__section{
     width: 240px;
-    margin-left: 35px;
-    /* background-color: lightcoral; */
+    background-color: white;
     height: 370px;
+    margin-left: 35px;
     margin-bottom: 20px;
-    float: left;
+    border-radius: 1px, solid #ebebeb;
 }
 
 .product__section figure {
@@ -155,18 +166,12 @@ ul {
 }
 
 section article {
-    /* background-color: khaki; */
     padding: 10px;
     align-items: center;
 }
-/* .product__section figure {
-    background-color: hotpink;
-    float: left;
-} */
 
 
-/* Footer */
-
+/* Estilos de Footer */
 footer div {
     background-color: whitesmoke;
     width: 100%;
@@ -176,13 +181,69 @@ footer div {
 .footer__copyright {
     width: 100%;
     height: 50px;
+    font-size: 20px;
     background-color: whitesmoke;
     text-align: center;
 }
 .footer__section {
-    /* background-color: tomato; */
-    width: 50%;
+    background-color: whitesmoke;
+    width: 20%;
+    margin: auto;
+    font-size: 13px;
     height: 100px;
-    float: left;
+    /* float: left; */
     padding: 20px;
 }
+
+/* Media queries */
+
+@media all and (max-width: 600px) {
+    .products{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .product__section {
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+
+    footer div{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__section{
+        width: 100%;
+    }
+
+
+    .navigation--main{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .navigation--img{
+        width: 50%;
+    }
+    .navigation--search{
+        width: 260px;
+    }
+}
+
+
+
+/* @media all and (max-width: 1024px) {
+    .products{
+        width: 90%;
+    }
+    .product__section {
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+}​ */
+/* @media all and (max-width: 600px) and (min-width: 400px) and (orientation: landscape) {
+
+} */
