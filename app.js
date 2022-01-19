@@ -9,6 +9,8 @@ app.get('/inicio', (req, res) => {
     res.sendFile((__dirname + '/views/home.html'));
 });
 
+// Iniciamos el servidor obteniendo el 'PORT' del archivo '.env'(Environment variable)
+// Para una mejor organización.
 app.listen(process.env.PORT, () =>  {
-    console.log('[Express]: Se ha iniciado correctamente en el puerto: ' + process.env.PORT)
+    console.log('[Express]: Servidor corriendo en la ruta - http://localhost:' + process.env.PORT)
 });

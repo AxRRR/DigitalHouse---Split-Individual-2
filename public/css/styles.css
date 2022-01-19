@@ -1,5 +1,4 @@
 /* Estilos globales */
-
 html, body{
     background-color: whitesmoke;
     margin: 0px;
@@ -187,7 +186,17 @@ li:hover{
 }
 
 /* Media queries */
-@media all and (max-width: 600px) {
+
+/* Media query para pantallas mas pequeñas, agrandamos el 100% del ancho de la pantalla para que
+    los productos no se compacten demasiado. */
+@media all and (max-width: 1360px) {
+    .products{
+        width: 100%;
+    }
+}
+
+/* Media query para el ancho de una tablet y resoluciones más pequeñas como telefonos moviles. */
+@media all and (max-width: 769px) {
     nav{
         display: flex;
         flex-direction: column;
@@ -214,6 +223,7 @@ li:hover{
 
     .navigation__img{
         width: 50%;
+        height: auto;
     }
 
     .navigation__search{
@@ -258,15 +268,13 @@ li:hover{
 
     .product__section{
         width: 100%;
+        height: auto;
         margin-left: 0px;
+        font-size: 1.5em;
     }
 
     .product__product{
         display: none;
-    }
-
-    .product__section{
-        height: 400px;
     }
     
     .footer__main{
@@ -280,6 +288,7 @@ li:hover{
     }
 }
 
+/* Estilos para desactivar o activar el menú hamburguesa. (El código del menú esta en public/scripts). */
 .visibilityEnable{
     display: inline;
 }
@@ -287,17 +296,3 @@ li:hover{
 .visibilityDisable{
     display: none;
 }
-
-/* @media all and (max-width: 1024px) {
-    .products{
-        width: 90%;
-    }
-    .product__section {
-        width: 100%;
-        margin-left: 0px;
-        
-    }
-}​ */
-/* @media all and (max-width: 600px) and (min-width: 400px) and (orientation: landscape) {
-
-} */
