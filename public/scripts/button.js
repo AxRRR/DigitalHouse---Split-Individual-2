@@ -18,12 +18,4 @@ function showMenu(){
     return menuValue = false;
 }
 
-function defaultMenuScreen(){
-    if(menuValue){
-        document.getElementById("menuUser1").className = 'navigation__user visibilityDisable';
-        document.getElementById("menuUser2").className = 'navigation__categories visibilityDisable';
-        document.getElementById("menuInput").className = 'navigation__search visibilityDisable';
-        return menuValue = false;
-    }
-}
 
