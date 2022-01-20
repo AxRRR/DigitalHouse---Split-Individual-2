@@ -9,6 +9,10 @@ app.get('/inicio', (req, res) => {
     res.sendFile((__dirname + '/views/home.html'));
 });
 
+app.get('/auth/register', (req, res) => {
+    res.sendFile((__dirname + '/views/register.html'));
+});
+
 // Iniciamos el servidor obteniendo el 'PORT' del archivo '.env'(Environment variable)
 // Para una mejor organización.
 app.listen(process.env.PORT, () =>  {

@@ -1,0 +1,60 @@
+form input{
+    border-radius: 8px;
+    border-color: transparent;
+    width: 95%;
+    height: 2em;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 50%;
+    border-radius: 8px;
+    height: 3em;
+    background-color: #fcf45c;
+    border-color: transparent;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.form__buttons{
+    display: flex;
+}
+
+.form__content{
+    width: 25%;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__radio{
+    height: 15px;
+}
+
+.form_profile ul{
+    display: flex;
+}
+
+.form_profile li{
+    width: 15%;
+}
+
+.form__categories ul{
+    width: 90%;
+}
+
+.form__categories li{
+    display: flex;
+    width: 100%;
+}
+
+.form__select{
+    height: 15px;
+}
+
+.form__categories label{
+    width: 100%;
+}

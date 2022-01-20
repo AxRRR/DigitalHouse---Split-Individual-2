@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Header -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Importamos los iconos de FontAwesome para el menu hamburguesa -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- Importamos los estilos CSS -->
+        <style type="text/css" media="screen">
+            @import '/css/styles.css';
+            @import '/css/register.css';
+        </style>
+        <title>Mercado Liebre</title>
+    </head>
+
+    <!-- Body -->
+    <body>
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <section class='navigation__main'>
+                    <div class='navigation__img'>
+                        <img
+                            src="/images/logo-mercado-liebre.svg"
+                            class="home--ImageStyle"
+                        />
+                    </div>
+                    <!-- Icono del menú hamburguesa que se activa en resolución 769 o menor -->
+                    <i 
+                        id='mobileButton' 
+                        class='fas fa-bars navigation__button'></i>
+                    <!--  -->
+                    <div id='menuInput' class='navigation__search'>
+                        <input 
+                            type='text'
+                            placeholder='Busca un producto' 
+                        />
+                    </div>
+                    <div id='menuUser1' class='navigation__user'>
+                        <ul>
+                            <li>Crea una cuenta</li>
+                            <li>Ingresa</li>
+                            <li>Mis compras</li>
+                        </ul>
+                    </div>
+                    
+                </section>
+                <section id='menuUser2' class='navigation__categories'>
+                    <ul>
+                        <li>Ofertas</li>
+                        <li>Tiendas oficiales</li>
+                        <li>Vender</li>
+                        <li>Ayuda</li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+
+        <!-- Formulario de Registro -->
+        <main>
+
+            <form>
+                <div class='form__content'>
+                    <input 
+                        type='text'  
+                        placeholder='Nombre y Apellido'
+                    />
+                    <input 
+                        type='text'  
+                        placeholder='Nombre de Usuario'
+                    />
+                    <label>Fecha de nacimiento</label>
+                    <input 
+                        type='date'
+                    />
+                    <input 
+                        type='text'  
+                        placeholder='Domicilio'
+                    />
+                    <section class='form_profile'>
+                        <label>Perfil de Usuario</label>
+                        <ul>
+                            <li>
+                                <label>Vendedor</label>
+                                <input 
+                                    type='radio'
+                                    class='form__radio'    
+                                />
+                            </li>
+                            <li>
+                                <label>Comprador</label>
+                                <input 
+                                    type='radio'
+                                    class='form__radio'    
+                                />
+                            </li>
+                        </ul>
+                    </section>
+                    <section class='form__categories'>
+                        <label>Categorias de interés</label>
+                        <ul>
+                            <li>
+                                <label>Electro</label>
+                                <input 
+                                    type='checkbox' 
+                                    class='form__select'
+                                /> 
+                            </li>
+                            <li>
+                                <label>Moda</label>
+                                <input 
+                                    type='checkbox' 
+                                    class='form__select'
+                                />
+                            </li>
+                            <li>
+                                <label>Hogar</label>
+                                <input 
+                                    type='checkbox' 
+                                    class='form__select'
+                                />
+                            </li>
+                            <li>
+                                <label>Jugueteria</label>
+                                <input 
+                                    type='checkbox' 
+                                    class='form__select'
+                                /> 
+                            </li>
+                            <li>
+                                <label>Vida sana</label>
+                                <input 
+                                    type='checkbox' 
+                                    class='form__select'
+                                /> 
+                            </li>
+                        </ul>
+                    </section>
+                    <label>Selecciona una foto de perfil</label>
+                    <input type='file' />
+                    <input 
+                        type='password' 
+                        placeholder='Escribe una contraseña'    
+                    />
+                    <input 
+                        type='password' 
+                        placeholder='Repite tu contraseña'    
+                    />
+                    <div class='form__buttons'>
+                        <button type='submit'>Continuar</button>
+                        <button>Restablecer campos</button>
+                    </div>
+                </div>
+            </form>
+            
+        </main>
+
+        <!-- Importamos el código para hacer funcionar el menú hamburguesa -->
+        <script src='/scripts/button.js'></script>
+    </body>
+
+    <!-- Footer -->
+    <footer>
+        <div class='footer__main'>
+            <section class='footer__section'>
+                <h1>
+                    Pagá con tarjeta o efectivo
+                </h1>
+                <p>
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+                </p>​
+            </section>
+            <section class='footer__section'>
+                <h1>
+                    Envío gratis desde $ 2.500​
+                </h1>
+                <p>
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+                </p>
+            </section>
+            <section class='footer__section'>
+                <h1>
+                    Seguridad, de principio a fin​
+                </h1>
+                ​<p>
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+                </p>
+            </section>
+        </div>
+        <section class='footer__copyright'>
+            Copyright © 1999-2020 MercadoLiebre S.R.L.
+        </section>
+    </footer>
+</html>
