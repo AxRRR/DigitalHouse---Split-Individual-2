@@ -5,13 +5,23 @@ html, body{
 }
 
 main{
-    margin-top: 200px;
+    margin-top: 5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: grey;
 }
 
 h1{
     color: grey;
     margin: 0px;
     padding: 0px;
+    font-weight: bold;
+    font-family: 'Alumni Sans', sans-serif;
 }
 
 ul{
@@ -22,6 +32,7 @@ p{
     color: grey;
     margin: 0px;
     padding: 0px;
+    font-family: 'Alumni Sans', sans-serif;
 }
 
 nav{
@@ -30,73 +41,96 @@ nav{
     width: 100%;
     top: 0px;
     z-index: 1;
+    font-family: 'Alumni Sans', sans-serif;
 }
 
 nav input {
-    width: 100%;
+    width: 70%;
     height: 30px;
-    border-radius: 8px;
-    border-color: rgb(109, 109, 109, 0.2);
+    border-color: rgb(109, 109, 109, 0.1);
 }
 
+nav input:focus{
+    outline:none;
+} 
+
 nav img{
+    width: 50%;
+}
+
+section figure{
     width: 100%;
+    height: auto;
+    background-color: #fcf45c;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+section figure img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Estilos de Navegación */
 .navigation__main{
     width: 100%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 50px; 
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    justify-items: end;
+    grid-column-gap: 20px;
 }
 
 .navigation__img{
-    margin-top: 20px;
+    margin-top: 5px;
     height: 60px;
-    width: 10%;
+    width: 60%;
 }
 
 .navigation__search{
-    margin-top: 20px;
+    margin-top: 5px;
     height: 60px;
-    width: 30%;
-    margin-left: 40px;
+    width: 100%;
 }
 
 .navigation__user{
-    margin-top: 10px;
-    height: 60px;
-    width: 25%;
+    /* height: 60px; */
+    width: 100%;
 }
 
 .navigation__categories{
-    display: flex;
-    width: 60%;
-    height: 50px;
-    margin: auto;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr .4fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
 }
 
 .navigation__categories ul{
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .navigation__categories li{
-    margin-right: 20px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
 .navigation__user ul{
     display: flex;
-    height: 35px;
+    /* height: 35px; */
     background-color: transparent;
     width: 100%;
 }
 
 .navigation__user li{
-    margin-right: 20px;
     font-size: 20px;
+    margin-right: 20px;
     cursor: pointer;
 }
 
@@ -112,7 +146,6 @@ li:hover{
 /* Estilos de Productos */
 .products__title {
     width: 60%;
-    margin-top: 30px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -121,6 +154,7 @@ li:hover{
 
 .products{
     width: 60%;
+    height: 24rem;
     display: flex;
     flex-direction: row;
     margin-left: auto;
@@ -128,12 +162,11 @@ li:hover{
 }
 
 .product__section{
-    width: 240px;
+    width: 270px;
     background-color: white;
-    height: 370px;
-    margin-left: 35px;
-    margin-bottom: 20px;
-    border-radius: 1px, solid #ebebeb;
+    height: 320px;
+    margin-left: 10px;
+    margin-bottom: 3em;
 }
 
 .product__section figure{
@@ -161,6 +194,47 @@ li:hover{
     align-items: center;
 }
 
+#product_truckIcon{
+    transition: 1.5s;
+    color: rgb(4, 160, 4);
+    width: 100%;
+}
+
+#product_showAll{
+    display: none; 
+    transition: display 1s;
+}
+
+main section{
+    transition: height 1s, box-shadow 2s; 
+}
+
+main section:hover #product_truckIcon{
+    /* transition: 1.5s;
+    transform: rotateZ(-90deg); */
+    animation: slideCart 7s infinite;
+}
+
+main section:hover #product_showAll{
+    display: block;
+}
+
+main section:hover{
+    transition: display .1s, box-shadow 2s;
+    height: 350px;
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}
+
+/* Animaciones del carrito */
+@keyframes slideCart {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(175px);
+    }
+  }
+
 
 /* Estilos de Footer */
 .footer__main {
@@ -172,7 +246,7 @@ li:hover{
 .footer__copyright {
     width: 100%;
     height: 50px;
-    font-size: 20px;
+    font-size: 13px;
     background-color: whitesmoke;
     text-align: center;
 }
@@ -184,6 +258,14 @@ li:hover{
     font-size: 13px;
     height: 100px;
     padding: 20px;
+    text-align: center;
+}
+
+footer section i{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(68, 68, 248);
+    width: 100%;
 }
 
 /* Media queries */
