@@ -1,0 +1,177 @@
+form input{
+    border-color: transparent;
+    border-bottom-color: rgba(163, 163, 163, 0.2);
+    width: 45%;
+    margin-left: 20px;
+    height: 2em;
+    margin-bottom: 10px;
+    transition: border 3s;
+}
+
+.login_style{
+    width: 100%;
+}
+
+li:hover{
+    /* Pseudo clase para evitar el hover en las 
+        listas definidas en el 'styles' */
+    border: 0;
+    border-bottom: transparent;
+}
+
+form input:hover{
+    border-bottom-color: rgba(63, 76, 255, 0.3);
+}
+
+form input:focus{
+    outline:none;
+} 
+
+button{
+    width: 50%;
+    border-radius: 8px;
+    height: 3em;
+    background-color: #fcf45c;
+    border-color: transparent;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: background 2s;
+}
+
+.login__button{
+    width: 100%;
+}
+
+button:hover{
+    background-color: rgba(63, 76, 255);
+    color: white;
+}
+
+.form__buttons{
+    display: flex;
+}
+
+.form__content{
+    width: 50%;
+    margin-top: 8%;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.form__fields{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form__password{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form__fields label{
+    margin-left: 20px;
+}
+
+.form__radio{
+    height: 15px;
+}
+
+.form_profile ul{
+    display: flex;
+}
+
+.form_profile li{
+    width: 15%;
+}
+
+.form__categories ul{
+    width: 90%;
+}
+
+.form__categories li{
+    display: flex;
+    width: 100%;
+}
+
+.form__select{
+    height: 15px;
+}
+
+.form__categories label{
+    width: 100%;
+}
+
+/* Estilos de Login */
+.login__content{
+    flex-direction: column;
+    margin: auto;
+    width: 30%;
+    justify-items: center;
+    margin-top: 8%;
+}
+
+.login__fields{
+    width: 70%;
+    margin: auto;
+}
+
+@media all and (max-width: 1360px) {
+    .form__content{
+        width: 70%;
+        margin-top: 15%;
+    }
+    .login__content{
+        width: 50%;
+        margin-top: 15%;
+    }
+    .login__fields{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 800px){
+    .form__content{
+        margin-top: 20%;
+    }
+    .form__fields{
+        flex-direction: column;
+    }
+    .login__content{
+        width: 70%;
+    }
+    .login__fields{
+        width: 70%;
+        margin: auto;
+    }
+
+}
+/* Media query para el ancho de una tablet y resoluciones más pequeñas como telefonos moviles. */
+@media all and (max-width: 700px){
+    form input{
+        width: 90%;
+    }
+    button{
+        width: 100%;
+    }
+    .form__content{
+        width: 90%;
+        margin-top: 60%;
+    }
+    .form__fields{
+        flex-direction: column;
+    }
+    .form__buttons{
+        flex-direction: column;
+    }
+}

@@ -66,108 +66,21 @@
         <!-- Formulario de Registro -->
         <main>
             <form action='#' method="POST">
-                <div class='form__content'>
-                    <div class='form__fields'>
-                        <input 
-                            type='text'  
-                            placeholder='Nombre y Apellido'
-                            id='name_user'
-                        />
-                        <input 
-                            type='text'  
-                            placeholder='Nombre de Usuario'
-                        />
+                <div class='form__content login__content'>
+                    <div class='form__fields login__fields'>
                         <input 
                             type='email'  
-                            placeholder='Correo electronico'
-                        />
-                        <label>Fecha de nacimiento</label>
-                        <input 
-                            type='text'  
-                            placeholder='Domicilio'
+                            placeholder='Ingresa tu email'
+                            id='name_user'
+                            class='login_style'
                         />
                         <input 
-                            type='date'
+                            type='password'  
+                            placeholder='Contraseña'
+                            class='login_style'
                         />
                     </div>
-                    
-                    <div class='form__categories'>
-                        <label>Categorias de interés</label>
-                        <ul>
-                            <li>
-                                <label>Electro</label>
-                                <input 
-                                    type='checkbox' 
-                                    class='form__select'
-                                /> 
-                            </li>
-                            <li>
-                                <label>Moda</label>
-                                <input 
-                                    type='checkbox' 
-                                    class='form__select'
-                                />
-                            </li>
-                            <li>
-                                <label>Hogar</label>
-                                <input 
-                                    type='checkbox' 
-                                    class='form__select'
-                                />
-                            </li>
-                            <li>
-                                <label>Jugueteria</label>
-                                <input 
-                                    type='checkbox' 
-                                    class='form__select'
-                                /> 
-                            </li>
-                            <li>
-                                <label>Vida sana</label>
-                                <input 
-                                    type='checkbox' 
-                                    class='form__select'
-                                /> 
-                            </li>
-                        </ul>
-                    </div>
-                    <div class='form_profile'>
-                        <label>Perfil de Usuario</label>
-                        <ul>
-                            <li>
-                                <label>Vendedor</label>
-                                <input 
-                                    type='radio'
-                                    name='profile_Type'
-                                    class='form__radio'    
-                                />
-                            </li>
-                            <li>
-                                <label>Comprador</label>
-                                <input 
-                                    type='radio'
-                                    name='profile_Type'
-                                    class='form__radio'    
-                                />
-                            </li>
-                        </ul>
-                    </div>
-                    <label>Selecciona una foto de perfil</label>
-                    <input type='file' />
-                    <div class='form__password'>
-                        <input 
-                            type='password' 
-                            placeholder='Escribe una contraseña'    
-                        />
-                        <input 
-                            type='password' 
-                            placeholder='Repite tu contraseña'    
-                        />
-                    </div>
-                    <div class='form__buttons'>
-                        <button type='submit'>Continuar</button>
-                        <button type='reset'>Restablecer campos</button>
-                    </div>
+                    <button class='login__button'>Ingresar</button>
                 </div>
             </form>
             

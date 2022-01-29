@@ -10,6 +10,7 @@ main{
 
 a{
     text-decoration: none;
+    color: grey;
 }
 
 a:visited{
@@ -61,7 +62,6 @@ nav img{
 section figure{
     width: 100%;
     height: auto;
-    background-color: #fcf45c;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -72,6 +72,7 @@ section figure img{
     width: 100%;
     height: 100%;
 }
+
 
 /* Estilos de Navegación */
 .navigation__main{
@@ -143,6 +144,8 @@ li:hover{
     display: none;
 }
 
+
+
 /* Estilos de Productos */
 .products__title {
     width: 60%;
@@ -164,7 +167,7 @@ li:hover{
 .product__section{
     width: 270px;
     background-color: white;
-    height: 320px;
+    height: 350px;
     margin-left: 10px;
     margin-bottom: 3em;
 }
@@ -210,8 +213,6 @@ main section{
 }
 
 main section:hover #product_truckIcon{
-    /* transition: 1.5s;
-    transform: rotateZ(-90deg); */
     animation: slideCart 7s infinite;
 }
 
@@ -221,7 +222,7 @@ main section:hover #product_showAll{
 
 main section:hover{
     transition: display .1s, box-shadow 2s;
-    height: 350px;
+    height: 375px;
     box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
 }
 
@@ -268,6 +269,7 @@ footer section i{
     width: 100%;
 }
 
+
 /* Media queries */
 
 /* Media query para pantallas mas pequeñas, agrandamos el 100% del ancho de la pantalla para que
@@ -275,64 +277,97 @@ footer section i{
 @media all and (max-width: 1360px) {
     .products{
         width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+    .product__section{
+        height: auto;
+    }
+    main section:hover{
+        height: auto;
     }
 }
 
 /* Media query para el ancho de una tablet y resoluciones más pequeñas como telefonos moviles. */
-@media all and (max-width: 769px) {
-    nav{
-        display: flex;
-        flex-direction: column;
+@media all and (max-width: 700px){
+    section figure{
+        width: 100%;
+        height: auto;
+        margin-top: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+    }
+    
+    section figure img{
+        width: 100%;
+        height: 100%;
+    }
+
+    nav input {
+        width: 100%;
+        height: 30px;
+        border-color: rgb(109, 109, 109, 0.1);
+    }
+
+    nav img{
+        width: 100%;
+    }
+
+    main section:hover{
+        height: auto;
+    }
+
+    .navigation__main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: start;
         height: auto;
     }
 
     .navigation__button{
         border-color: transparent;
-        background-color: transparent;
-        width: 100px;
         font-size: 40px;
         color: grey;
-        position: absolute;
-        top: 20px;
-        right: 0px;
-        display: inline;
-    }
-
-    .navigation__main{
-        display: flex;
-        flex-direction: column;
-        height: auto;
+        position: relative;
+        left: 50%;
+        color: blue;
+        display: block;
     }
 
     .navigation__img{
         width: 50%;
+        margin-left: auto;
+        margin-right: auto;
         height: auto;
     }
 
     .navigation__search{
-        width: 260px;
+        width: 70%;
+        margin: auto;
         display: none;
     }
 
     .navigation__user{
         display: none;
-        width: 90%;
         height: 100px;
-        text-align: center;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
     }
 
     .navigation__categories{
-        width: 90%;
+        display: flex;
         display: none;
     }
 
     .navigation__categories ul{
         height: 60px;
-        margin: 0px;
+        justify-content: left;
     }
     
     .navigation__categories li{
-        margin-right: 20px;
         font-size: 20px;
         cursor: pointer;
     }
@@ -345,6 +380,7 @@ footer section i{
 
     .products{
         width: 90%;
+        height: auto;
         display: flex;
         flex-direction: column;
     }
@@ -360,15 +396,41 @@ footer section i{
         display: none;
     }
     
-    .footer__main{
+    .footer__main {
         width: 90%;
         display: flex;
         flex-direction: column;
     }
-
-    .footer__section{
+    
+    .footer__copyright {
+        width: 100%;
+        height: 50px;
+        font-size: 13px;
+        background-color: whitesmoke;
+        text-align: center;
+    }
+    
+    .footer__section {
+        background-color: whitesmoke;
+        width: 100%;
+        margin: auto;
+        font-size: 13px;
+        height: 100px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    footer section i{
+        font-size: 50px;
+        text-align: center;
+        color: rgb(68, 68, 248);
         width: 100%;
     }
+
+    #product_truckIcon{
+        width: 40%;
+    }
+
 }
 
 /* Estilos para desactivar o activar el menú hamburguesa. (El código del menú esta en public/scripts). */
