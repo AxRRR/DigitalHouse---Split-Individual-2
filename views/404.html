@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Header -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Importamos los iconos de FontAwesome para el menu hamburguesa -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- Importamos los estilos CSS -->
+        <style type="text/css" media="screen">
+            @import '/css/styles.css';
+            @import '/css/404.css';
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Barlow+Condensed:wght@200&family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <title>Mercado Liebre</title>
+    </head>
+
+    <!-- Body -->
+    <body>
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <section class='navigation__main'>
+                    <div class='navigation__img'>
+                        <a href='/home'><img
+                            src="/images/logo-mercado-liebre.svg"
+                            class="home--ImageStyle"
+                        /></a>
+                    </div>
+                    <!-- Icono del menú hamburguesa que se activa en resolución 769 o menor -->
+                    <i 
+                        id='mobileButton' 
+                        class='fas fa-bars navigation__button'></i>
+                    <!--  -->
+                    <div id='menuInput' class='navigation__search'>
+                        <input 
+                            type='text'
+                            placeholder='Busca un producto' 
+                        />
+                    </div>
+                    <div id='menuUser1' class='navigation__user'>
+                        <ul>
+                            <li><a href='/auth/register'>Crea una cuenta</a></li>
+                            <li><a href='/auth/login'>Ingresa</a></li>
+                            <li><a href='#'>Mis compras</a></li>
+                        </ul>
+                    </div>
+                    
+                </section>
+                <section id='menuUser2' class='navigation__categories'>
+                    <ul>
+                        <li>Ofertas</li>
+                        <li>Tiendas oficiales</li>
+                        <li>Vender</li>
+                        <li>Ayuda</li>
+                    </ul>
+                    <!-- <section>
+                        <p>Compra a cuotas y sin tarjeta de crédito</p>
+                    </section> -->
+                </section>
+            </nav>
+        </header>
+
+        <!-- Formulario de Registro -->
+        <main>
+            <section>
+                <h1>404 not found</h1>
+                <p>Este enlace no está disponible</p>
+                <button>
+                    <a href='/home'>Regresar al inicio</a>
+                </button>
+            </section>
+            
+        </main>
+
+        <!-- Importamos el código para hacer funcionar el menú hamburguesa -->
+        <script src='/scripts/button.js'></script>
+    </body>
+
+    <!-- Footer -->
+    <footer>
+        <div class='footer__main'>
+            <section class='footer__section'>
+                <i class="fas fa-id-card"></i>
+                <h1>
+                    Pagá con tarjeta o efectivo
+                </h1>
+                <p>
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+                </p>​
+            </section>
+            <section class='footer__section'>
+                <i class="fas fa-gift"></i>
+                <h1>
+                    Envío gratis desde $ 2.500​
+                </h1>
+                <p>
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+                </p>
+            </section>
+            <section class='footer__section'>
+                <i class="fas fa-shield-alt"></i>
+                <h1>
+                    Seguridad, de principio a fin​
+                </h1>
+                ​<p>
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+                </p>
+            </section>
+        </div>
+        <section class='footer__copyright'>
+            Copyright © 1999-2020 MercadoLiebre S.R.L.
+        </section>
+    </footer>
+</html>
