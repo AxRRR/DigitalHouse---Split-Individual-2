@@ -142,7 +142,7 @@ button:hover{
 
 @media all and (max-width: 800px){
     .form__content{
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .form__fields{
         flex-direction: column;
@@ -166,7 +166,7 @@ button:hover{
     }
     .form__content{
         width: 90%;
-        margin-top: 60%;
+        margin-top: 20%;
     }
     .form__fields{
         flex-direction: column;

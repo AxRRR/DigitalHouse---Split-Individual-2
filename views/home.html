@@ -22,15 +22,21 @@
             <!-- Navigation -->
             <nav>
                 <section class='navigation__main'>
+                    <!-- Icono del menú hamburguesa que se activa en resolución 769 o menor -->
+                    <div class='navigation__showMenu'>
+                    <div class='navigation__menuMobile'>
+                        <i 
+                            id='mobileButton' 
+                            class='fas fa-bars navigation__button'>
+                        </i>
+                    </div>
                     <div class='navigation__img'>
                         <a href='/home'><img
                             src="/images/logo-mercado-liebre.svg"
+                            class="home--ImageStyle"
                         /></a>
                     </div>
-                    <!-- Icono del menú hamburguesa que se activa en resolución 769 o menor -->
-                    <i 
-                        id='mobileButton' 
-                        class='fas fa-bars navigation__button'></i>
+                    </div>
                     <!--  -->
                     <div id='menuInput' class='navigation__search'>
                         <input 
@@ -42,7 +48,7 @@
                         <ul>
                             <li><a href='/auth/register'>Crea una cuenta</a></li>
                             <li><a href='/auth/login'>Ingresa</a></li>
-                            <li><a href='/auth/register'>Mis compras</a></li>
+                            <li><a href='#'>Mis compras</a></li>
                         </ul>
                     </div>
                     

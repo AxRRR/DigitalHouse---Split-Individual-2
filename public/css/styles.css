@@ -144,6 +144,12 @@ li:hover{
     display: none;
 }
 
+.navigation__menuMobile{
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
 
 
 /* Estilos de Productos */
@@ -293,7 +299,7 @@ footer section i{
     section figure{
         width: 100%;
         height: auto;
-        margin-top: 45%;
+        margin-top: 10%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 0px;
@@ -322,21 +328,31 @@ footer section i{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         justify-items: start;
-        height: auto;
+        height: 5rem;
     }
 
+    .navigation__menuMobile{
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .navigation__showMenu{
+        display: flex;
+    }
+    
     .navigation__button{
         border-color: transparent;
         font-size: 40px;
         color: grey;
-        position: relative;
-        left: 50%;
+        margin-top: 10px;
         color: blue;
         display: block;
+        text-align: center;
     }
 
     .navigation__img{
-        width: 50%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
         height: auto;
@@ -350,11 +366,12 @@ footer section i{
 
     .navigation__user{
         display: none;
-        height: 100px;
-        width: 40%;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
         text-align: left;
+        flex-direction: column;
+        width: 90%;
     }
 
     .navigation__categories{
@@ -363,7 +380,7 @@ footer section i{
     }
 
     .navigation__categories ul{
-        height: 60px;
+        height: 40px;
         justify-content: left;
     }
     
@@ -373,8 +390,7 @@ footer section i{
     }
 
     .navigation__user ul{
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
     }
 
