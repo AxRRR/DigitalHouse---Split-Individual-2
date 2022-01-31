@@ -26,6 +26,6 @@ app.get('*', (req, res) => {
     res.sendFile((__dirname + '/views/404.html'));
 });
 
-app.listen(process.env.PORT || 4000, () =>  {
+app.listen(process.env.PORT || 3000, () =>  {
     console.log('[Express]: Servidor corriendo en la ruta - http://localhost:' + process.env.PORT)
 });
