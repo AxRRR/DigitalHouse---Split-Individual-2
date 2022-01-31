@@ -36,6 +36,7 @@ button{
     margin-bottom: 10px;
     margin-right: 10px;
     transition: background 2s;
+    cursor: pointer;
 }
 
 .login__button{
@@ -43,8 +44,7 @@ button{
 }
 
 button:hover{
-    background-color: rgba(63, 76, 255);
-    color: white;
+    background-color: #cfc83f;
 }
 
 .form__buttons{
@@ -61,7 +61,8 @@ button:hover{
     background-color: white;
     display: flex;
     flex-direction: column;
-    font-family: 'Alumni Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 0;
 }
 
 .form__fields{
@@ -96,6 +97,8 @@ button:hover{
 
 .form__categories ul{
     width: 90%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 0;
 }
 
 .form__categories li{
