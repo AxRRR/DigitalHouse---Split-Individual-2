@@ -69,7 +69,7 @@ nav img{
 section figure{
     width: 100%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
@@ -79,7 +79,6 @@ section figure img{
     width: 100%;
     height: 100%;
 }
-
 
 /* Estilos de Navegación */
 .navigation__main{
@@ -166,23 +165,23 @@ li:hover{
 
 .products{
     width: 60%;
-    height: 24rem;
+    height: 25rem;
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fcf45c;
 }
 
 .product__section{
     width: 270px;
     background-color: white;
-    height: 350px;
+    height: 360px;
     margin-left: 10px;
     margin-bottom: 3em;
 }
 
 .product__section figure{
-    background-color: #fcf45c;
     width: 100%;
     margin: 0px;
 }
