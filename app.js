@@ -5,8 +5,8 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, './public')));
 
-app.listen(process.env.PORT || 3000, () =>  {
-    console.log('[Express]: Servidor corriendo en la ruta - http://localhost:' + process.env.PORT)
+app.listen(process.env.PORT || 5000, () =>  {
+    console.log('[Express]: Servidor corriendo correctamente')
 });
 
 app.get('/home', (req, res) => {
