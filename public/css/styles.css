@@ -176,7 +176,7 @@ li:hover{
 .product__section{
     width: 270px;
     background-color: white;
-    height: 23rem;
+    height: 24rem;
     margin-left: 10px;
     margin-bottom: 3em;
 }
@@ -230,7 +230,7 @@ main section:hover #product_showAll{
 
 main section:hover{
     transition: display .1s, box-shadow 2s;
-    height: 24rem;
+    height: 25.5rem;
     box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
 }
 
